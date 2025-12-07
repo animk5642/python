@@ -1,27 +1,34 @@
 
 def add_person():
 
-    name = input("enter the name")
-    age = input("enter the age")
+       name = input("enter the name")
+       age = input("enter the age")
 
-    d = {
-        "name": name,
-        "age": age
-    }
-    return d
+       d = {
+            "name": name,
+            "age": age
+        }
+       return d
 
 
 people = []
 
 
-command = input("enter the task add/delete/search").lowe()
+while True:
+    command = input("enter the task add/delete/search").lower()
+    if command == "a":
+        person = add_person()
+        people.append(person)
+        print("person added")
+        
 
-if command == "a":
-    person = add_person()
-    people.append(person)
-elif command == "d":
-    pass
-elif command == "s":
-    pass
-else:
-    print("invalid input")
+    elif command == "d":
+            pass
+    elif command == "s":
+            pass
+    elif command=="q":
+            break
+    else:
+            print("invalid input")
+
+print(people)
