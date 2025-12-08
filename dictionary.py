@@ -45,6 +45,7 @@ def search(people):
             result =[]
             result.append(person)
             display(result)
+#to open json file
 
 with open("contact.json","r") as f:
             people = json.load(f)["contact"]
@@ -67,3 +68,6 @@ while True:
         print("invalid input")
 
 print(people)
+
+with open("contact.json","w") as f:
+            json.dump(f,{"contact":people})
