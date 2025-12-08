@@ -70,4 +70,4 @@ while True:
 print(people)
 
 with open("contact.json","w") as f:
-            json.dump(f,{"contact":people})
+            json.dump({"contact":people},f)
