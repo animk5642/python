@@ -1,0 +1,23 @@
+{
+  "contact": [
+    {
+      "name": "anirudh",
+      "age": 21
+    },
+    {
+      "name": "adithyan",
+      "age": 24
+    },
+    {
+      "name": "arun",
+      "age": 29
+    }
+  ]
+  ,
+  "hobby": [
+    {
+      "main": "eating",
+      "side":"sleeping"
+    }
+  ]
+}
