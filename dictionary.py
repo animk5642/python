@@ -68,6 +68,6 @@ while True:
         print("invalid input")
 
 print(people)
-
+#to write the json file
 with open("contact.json","w") as f:
             json.dump({"contact":people},f)
